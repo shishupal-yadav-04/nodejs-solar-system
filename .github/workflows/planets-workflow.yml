@@ -18,10 +18,10 @@ env:
 jobs:
   unit-testing:
     name: Unit Testing
-    timeout-minutes: 20
+    # timeout-minutes: 20
     services:
       mongo-db:
-        image: mongo:6.0
+        image: docker://mongo:6.0
         ports:
           - 27017:27017
         options: >-
